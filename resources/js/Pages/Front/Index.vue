@@ -48,14 +48,12 @@ const props = defineProps({
 });
 </script>
 
-
-
 <template>
     <Head title="Welcome" />
-    <nav class="bg-white">
+    <nav class="navbar bg-white">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" class="flex items-center">
-                <img src="img/logo.jpg" class="h-8 mr-3" alt=" Logo" />
+                <img src="img/logo.png" class="logo h-8 mr-3" alt=" Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-dark">Butterfly Space</span>
             </a>
             <div class="flex md:order-2">
@@ -81,7 +79,7 @@ const props = defineProps({
             </div>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul
-                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 dark:border-gray-700">
+                    class="navbar-menu font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 dark:border-gray-700">
                     <li>
                         <a href="#"
                             class="block py-2 pl-3 pr-4 text-dark bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-dark md:dark:text-blue-500"
@@ -97,7 +95,7 @@ const props = defineProps({
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-dark md:dark:hover:bg-transparent">Pricing</a>
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-dark md:dark:hover:bg-transparent">Suggestion</a>
                     </li>
                     <li>
                         <a href="#"
@@ -107,7 +105,7 @@ const props = defineProps({
             </div>
         </div>
     </nav>
-    <section class="bg-white dark:bg-gray-900">
+    <section class="menu bg-white dark:bg-gray-900">
         <div class="py-1 px-4 mx-auto max-w-screen-xl  lg:py-16 grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div class="flex flex-col justify-center">
                 <h1
@@ -135,7 +133,7 @@ const props = defineProps({
             </div>
         </div>
     </section>
-    <section cclass="bg-grey-50" id="about">
+    <section cclass="about bg-grey-50" id="about">
         <div class="mx-auto max-w-screen-xl container flex flex-col items-center py-16 md:py-20 lg:flex-row">
             <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
                 <h2 class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"> Who am I?
@@ -182,7 +180,7 @@ const props = defineProps({
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="footer">
         <div className="mx-auto max-w-screen-xl  px-4 sm:px-6">
             <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12 border-t border-gray-200">
                 <div className="sm:col-span-12 lg:col-span-3">
@@ -190,8 +188,8 @@ const props = defineProps({
                         <Logo />
                     </div>
                     <div className="text-sm text-gray-600">
-                        <img src="img/logo_Web.png" class="h-8 mr-3" alt=" Logo" />
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-dark">Dosen AI</span>
+                        <img src="img/logo.png" class="h-8 mr-3" alt=" Logo" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-dark">Butterfly Space</span>
                     </div>
                 </div>
                 <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
@@ -342,4 +340,25 @@ const props = defineProps({
             </div>
         </div>
 </footer></template>
-<style></style>
+<style>
+.navbar{
+    background-image: linear-gradient(#FFE0E0,#FFFAFA);
+}
+
+.navbar-menu{
+    background-color: transparent;
+}
+
+.menu{
+    background-image: linear-gradient(#FFFAFA, #FFE0E0);
+}
+
+#about{
+    background-color: #FFE0E0;
+}
+
+.footer{
+    background-color: #FFE0E0;
+    background-image: linear-gradient(#FFE0E0, #FFFAFA, #FFE0E0);
+}
+</style>
