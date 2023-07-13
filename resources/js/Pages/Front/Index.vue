@@ -136,14 +136,17 @@ const props = defineProps({
     <section cclass="about bg-grey-50" id="about">
         <div class="mx-auto max-w-screen-xl container flex flex-col items-center py-16 md:py-20 lg:flex-row">
             <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
-                <h2 class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"> Who am I?
-                </h2>
+                <h3 class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl">CURIOUS ABOUT ME?</h3>
                 <h4 class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"> {{ about.judul }}</h4>
                 <p class="pt-6 font-body leading-relaxed text-grey-20">{{ about.konten }}</p>
                 <div class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
                     <div class="flex items-center justify-center sm:justify-start">
-                        <a href="https://www.instagram.com/mujiyantosvc/"
-                            class="font-body text-lg font-semibold uppercase text-grey-20"> Connect with me </a>
+                        <a href="https://github.com/jessicaavg"
+                            class="font-body text-lg font-semibold uppercase text-grey-20"> Connect with me 
+                            <img class="logo" src="../../../../public/img/github.png" alt="Github Icon" width="45px" height="45px">
+                            <img class="logo2" src="../../../../public/img/ig.png" alt="Instagram Icon" width="45px" height="45px">
+                            <img class="logo3" src="../../../../public/img/logo-linkedln.png" alt="LinkedIn Icon" width="45px" height="45px">
+                        </a>
                         <div class="hidden sm:block">
                             <i class="bx bx-chevron-right text-2xl text-primary"></i>
                         </div>
@@ -266,7 +269,7 @@ const props = defineProps({
                         </li>
                         <li className="mb-2">
                             <a href="#0"
-                                className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Pricing</a>
+                                className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Suggestion</a>
                         </li>
                         <li className="mb-2">
                             <a href="#0"
@@ -354,11 +357,24 @@ const props = defineProps({
 }
 
 #about{
-    background-color: #FFE0E0;
+    background-image: linear-gradient(#FFE0E0, #FFFAFA, #FFE0E0);
 }
 
 .footer{
     background-color: #FFE0E0;
-    background-image: linear-gradient(#FFE0E0, #FFFAFA, #FFE0E0);
+}
+
+.logo{
+    margin-top: 20px;
+}
+
+.logo2{
+    margin-top: -45px;
+    margin-left: 65px;
+}
+
+.logo3{
+    margin-top: -45px;
+    margin-left: 132px;
 }
 </style>
