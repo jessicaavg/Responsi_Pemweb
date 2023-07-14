@@ -49,7 +49,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <Head title="Welcome" />
+    <Head title="Butterfly Space" />
     <nav class="navbar bg-white">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" class="flex items-center">
@@ -143,9 +143,14 @@ const props = defineProps({
                     <div class="flex items-center justify-center sm:justify-start">
                         <a href="https://github.com/jessicaavg"
                             class="font-body text-lg font-semibold uppercase text-grey-20"> Connect with me 
-                            <img class="logo" src="../../../../public/img/github.png" alt="Github Icon" width="45px" height="45px">
-                            <img class="logo2" src="../../../../public/img/ig.png" alt="Instagram Icon" width="45px" height="45px">
-                            <img class="logo3" src="../../../../public/img/logo-linkedln.png" alt="LinkedIn Icon" width="45px" height="45px">
+                            <br>
+                            <img class="icon" src="../../../../public/img/github.png" alt="Github Icon" width="45px" height="45px" target="_blank">
+                        </a>
+                        <a href="https://instagram.com/vega_nainggolan?igshid=NGExMmI2YTkyZg==">
+                            <img class="icon1" src="../../../../public/img/ig.png" alt="Instagram Icon" width="45px" height="45px" target="_blank">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jessica-vega-28329b203/">
+                            <img class="icon2" src="../../../../public/img/logo-linkedln.png" alt="LinkedIn Icon" width="45px" height="45px" target="_blank">
                         </a>
                         <div class="hidden sm:block">
                             <i class="bx bx-chevron-right text-2xl text-primary"></i>
@@ -364,17 +369,23 @@ const props = defineProps({
     background-color: #FFE0E0;
 }
 
-.logo{
-    margin-top: 20px;
+.icon{
+    margin: 0%;
+    margin-top: 5px;
+    display: block;
 }
 
-.logo2{
-    margin-top: -45px;
-    margin-left: 65px;
+.icon1{
+    margin-top: 35px;
+    margin-left: -103px;
+    height: 45px;
+    width: 147px; 
 }
 
-.logo3{
-    margin-top: -45px;
-    margin-left: 132px;
+.icon2{
+    margin-top: 35px;
+    margin-left: -80px;
+    width: 125px;
+    height: 45px;
 }
 </style>
